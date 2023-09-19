@@ -10,12 +10,126 @@ body{
     max-width: 500px;
     min-width: 200px;
     margin: 2rem auto;
-    font-size: 2.16rem;
 }
 
 main{
+    min-width: 300px;
+}
+
+#formBox{
     background: white;
     padding: 2rem;
     min-width: 300px;
-    border-radius: 14px;
+    border-radius: 9px;
+    box-shadow: 4px 4px 20px black;
+}
+
+#formBox h2{
+    padding: 1rem 0;
+    font-size: 1.9rem;
+}
+
+main #formBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+}
+
+main #formBox .inp{
+    display: flex;
+    flex-direction: column;
+}
+
+main label{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+input {
+    height: 41px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 1rem;
+
+}
+
+input:focus, input:hover{
+    background-color: rgb(209, 238, 255);
+    border: 2px solid blue;
+    box-shadow: 3px 4px 20px rgb(171, 171, 171);
+}
+
+main #formBox .btn{
+    height: 40px;
+    width: 50%;
+    font-size: 17px;
+    border: 2px solid black;
+    background: #ededed;
+    cursor: pointer;
+    margin: 13px 0;
+}
+
+main #formBox .btn:hover, .dashboard button:hover{
+    border-radius: 6px;
+    background: black;
+    color: white;
+    box-shadow: 3px 3px 10px black;
+}
+
+main #formBox .text{
+    display: none;
+    color: red;
+    font-size: 17px;
+    padding: 14px;
+}
+
+main #formBox .success{
+  color: green;
+}
+
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.dashboard h3{
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.dashboard button{
+    width: 50%;
+    height: 40px;
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: lightgray;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.dashboard .dtls{
+    background-color: #dddddd;
+    padding: 2rem;
+    width: 100%;
+    min-height: 30px;
+   
+}
+
+.dashboard .dtls h5{
+    font-size: 1.3rem;
+}
+
+.dashboard .dtls p{
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }

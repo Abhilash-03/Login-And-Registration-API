@@ -9,22 +9,33 @@
 <body>
     <main>
      <form id="formBox">
-        <div class="user">
+         <h2>Login/Register</h2>
+        <div class="user inp">
             <label for="username">Username</label>
             <input type="text" id="userInput" placeholder="Username">
         </div>
-        <div class="pwd">
+        <div class="pwd inp">
             <label for="password">Password</label>
             <input type="password" id="pwdInput" placeholder="Password">
         </div>
+        
+        <h5 class="text"></h5>
 
         <button type="submit" class="btn" id="btn">Submit</button>
      </form>
 
+
      <section class="dashboard">
+         <h3>Dashboard</h3>
+        <div class="dtls" id="details">
+            <!-- <p class="txt" id="userDetails"></p> -->
+        </div>
+
         <button type="button" id="getData">Get Data</button>
      </section>
 
 </main>
+
+<script src="index.js"></script>
 </body>
 </html>
